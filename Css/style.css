@@ -1,0 +1,146 @@
+*{
+    font-family: 'Poppins', sans-serif!important;
+}
+
+.btn-group{
+    display: flex;
+    margin: 9px;
+    margin-left: 0;
+}
+
+.navbar{
+    padding: 0!important;
+    margin: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.nave{
+    padding: 0!important;
+    position: fixed;
+    z-index: 30;
+    width: 100%!important;
+}
+
+.header-card{
+    padding-right: 7%!important;
+    padding-left: 7%!important;
+    background-color: white!important;
+}
+
+.navegation{
+    width: 100%!important;
+    height: 100%!important;
+    padding: 10px!important;
+}
+
+.navbar-brand img{
+    width: 45px;
+}
+
+.navbar-brand h1{
+    font-size: 14pt!important;
+    font-weight: 900!important;
+    font-style: normal!important;
+}
+
+.card{
+    border-radius: 10px!important;
+    margin-top: 100px!important;
+}
+
+.card-body{
+    border-radius: 0 0 10px 10px!important;
+    width: 100%!important;
+    padding: 10px!important;
+}
+
+.card-princi{
+    width: 100%!important;
+    justify-content: center!important;
+    align-items: center!important;
+    display: flex!important;
+}
+
+.card-img {
+    width: 100%!important;
+}
+
+.card-img-overlay{
+    width: 100%!important;
+    align-items:start!important;
+    display: flex!important;
+    justify-content: start!important;
+}
+
+.btn-class{
+    margin: 10px!important;
+    width: 140px!important;
+    font-size: 10pt!important;
+    font-weight: 900!important;
+}
+
+.card-news{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    padding: 4%!important;
+}
+
+.card-title{
+    font-weight: 800!important;
+    font-style: normal!important;
+    font-size: 16pt!important;
+    width: 100%!important;
+    padding: 10px!important;
+}
+
+.card-img-top{
+    border-radius: 10px 10px 0 0!important;
+    width: 100%!important;
+}
+
+.noticias{
+    width: 100%!important;
+}
+
+iframe{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+footer{
+    padding: 15px!important;
+    width: 100%!important;
+    height: 100%!important;
+    border-top: 1px solid black;
+}
+
+.texto{
+    font-size: 14pt!important;
+    font-style: normal!important;
+    text-align: start!important;
+    width: 80%!important;
+}
+
+.btn-relacio{
+    align-items: center!important;
+    display: flex!important;
+    justify-content: center!important;
+    margin-top: 40px!important;
+}
+
+.texto h1{
+    font-size: 18pt!important;
+    font-weight: 900!important;
+    font-style: normal!important;
+    color: black!important;
+    padding-top: 40px!important;
+    padding-bottom: 40px!important;
+}
+
+.info-texto{
+    margin-top: 40px!important;
+    display: flex!important;
+    justify-content: center!important;
+}
