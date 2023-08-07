@@ -83,14 +83,13 @@
 .card-news{
     display: flex!important;
     justify-content: center!important;
-    align-items: center!important;
-    padding: 4%!important;
+    padding: 1%!important;
 }
 
 .card-title{
-    font-weight: 800!important;
+    font-weight: 600!important;
     font-style: normal!important;
-    font-size: 16pt!important;
+    font-size: 15pt!important;
     width: 100%!important;
     padding: 10px!important;
 }
@@ -143,4 +142,28 @@ footer{
     margin-top: 40px!important;
     display: flex!important;
     justify-content: center!important;
+}
+
+#card-img-top{
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 10px 10px 0 0!important;
+}
+
+#card-body{
+    width: 100%!important;
+    padding: 10px!important;
+    border-radius: 0 0 10px 10px!important;
+}
+
+#card-img-top2, #card-img-top3, #card-img-top4, #card-img-top5, #card-img-top6{
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: 10px 10px 0 0!important;
+}
+
+#card-body2, #card-body3, #card-body4, #card-body5, #card-body6{
+    width: 100%!important;
+    padding: 10px!important;
+    border-radius: 0 0 10px 10px!important;
 }
