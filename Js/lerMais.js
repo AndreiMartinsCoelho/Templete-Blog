@@ -4,7 +4,6 @@ const btn3 = document.querySelector("#moreBTN3");
 const btn4 = document.querySelector("#moreBTN4");
 const btn5 = document.querySelector("#moreBTN5");
 const btn6 = document.querySelector("#moreBTN6");
-const btnVolt = document.querySelector("#Voltar");
 const cont = document.querySelector(".noticias");
 const container = document.querySelector(".container");
 const cont2 = document.querySelector(".header-card");
