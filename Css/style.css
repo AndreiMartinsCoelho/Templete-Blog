@@ -167,3 +167,15 @@ footer{
     padding: 10px!important;
     border-radius: 0 0 10px 10px!important;
 }
+
+.volt{
+    width: 100%!important;
+    height: 100%!important;
+    padding: 6px!important;
+    border: solid 3px black!important;
+    border-radius: 7px!important;
+    background-color: white!important;
+    color: blue!important;
+    text-decoration: none;
+    margin: 30px;
+}

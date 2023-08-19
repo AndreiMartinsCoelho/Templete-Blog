@@ -103,6 +103,25 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="container-fluid header-card-ver" style="width: 50rem;" style="margin: 20px;">
+        <div class="row">
+          <div class="col-sm-12 card-princi">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-titleVer"></h5>
+                  <p class="card-textDtVer"></p>
+                  <p class="card-nomeVer"><small class="text-body-secondary"></small></p>
+                  <p class="card-dateVer"><small class="text-body-secondary"></small></p>
+                  <div id="container"></div>
+                </div>
+                <img src="" class="card-img-bottom verIMG">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container-fluid noticias">
       <div class="row">
         <div class="col-sm-4 card-news" id="blogPost3">
@@ -112,10 +131,10 @@
             </div>
             <div id="card-body3">
               <h5 id="card-title3"></h5>
-              <p id="card-text3"></p>
               <p id="profileName3"></p>
               <p id="postDate3" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <p id="description2"></p>
+              <button class="btn btn-primary" id="moreBTN">Ver mais</button>
             </div>
           </div>
         </div>
@@ -127,10 +146,9 @@
             </div>
             <div id="card-body2">
               <h5 id="card-title2"></h5>
-              <p id="card-text2"></p>
               <p id="profileName2"></p>
               <p id="postDate2" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <button class="btn btn-primary" id="moreBTN2">Ver mais</button>
             </div>
           </div>
         </div>
@@ -142,10 +160,9 @@
             </div>
             <div id="card-body">
               <h5 id="card-title"></h5>
-              <p id="card-text"></p>
               <p id="profileName"></p>
               <p id="postDate" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <button class="btn btn-primary" id="moreBTN3">Ver mais</button>
             </div>
           </div>
         </div>
@@ -157,10 +174,9 @@
             </div>
             <div id="card-body4">
               <h5 id="card-title4"></h5>
-              <p id="card-text4"></p>
               <p id="profileName4"></p>
               <p id="postDate4" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <button class="btn btn-primary" id="moreBTN4">Ver mais</button>
             </div>
           </div>
         </div>
@@ -172,10 +188,9 @@
             </div>
             <div id="card-body5">
               <h5 id="card-title5"></h5>
-              <p id="card-text5"></p>
               <p id="profileName5"></p>
               <p id="postDate5" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <button class="btn btn-primary" id="moreBTN5">Ver mais</button>
             </div>
           </div>
         </div>
@@ -187,14 +202,17 @@
             </div>
             <div id="card-body6">
               <h5 id="card-title6"></h5>
-              <p id="card-text6"></p>
               <p id="profileName6"></p>
               <p id="postDate6" style="color:rgb(62, 62, 62)"></p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
+              <button class="btn btn-primary" id="moreBTN6">Ver mais</button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
+    <div class="containter-fluid">
+      <div class="row">
         <div class="col-sm-6 card-news" id="blogPopu">
           <div class="list-group">
             <h5 class="list-group-item list-group-item-action active" aria-current="true">Mais Populares</h5>
@@ -203,7 +221,7 @@
             <a href="./pageBlog.html" class="list-group-item list-group-item-action" id="Popu3"></a>
           </div>
         </div>
-
+    
         <div class="col-sm-6 card-news">
           <div class="card-3">
             <div class="ratio ratio-16x9">
@@ -212,11 +230,9 @@
             <div class="card-body">
               <h5 class="card-title">Cinema</h5>
               <p class="card-text">'Oppenheimer': longa de Christopher Nolan ganha novo trailer</p>
-              <a href="./pageBlog.html" class="btn btn-primary">Ver mais</a>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -238,6 +254,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="./Js/lerMais.js"></script>
     <script src="./Js/script.js"></script>
   </body>
 </html>

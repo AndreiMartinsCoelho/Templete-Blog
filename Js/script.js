@@ -1,111 +1,27 @@
-async function fetchAndRenderData() {
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/0";
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        //const thumbImage = data.thumbImage;
-        //document.getElementById("card-img-top").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
+//Postagens
+const Blog = async () => {
+    const URL= "https://api-rest-post-diegocandido.herokuapp.com/postagens/";
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+    const IMGSrc= "https://api-rest-post-diegocandido.herokuapp.com/postagens/4";
+    const title = document.getElementById("card-title").innerHTML = data[0].title;
+    const postDate = document.getElementById("postDate").innerHTML = "Postado por " + data[0].profileName + " em " + data[0].postDate;
+    const title2 = document.getElementById("card-title2").innerHTML = data[1].title;
+    const postDate2 = document.getElementById("postDate2").innerHTML = "Postado por " + data[1].profileName + " em " + data[1].postDate;
+    const title3 = document.getElementById("card-title3").innerHTML = data[2].title;
+    const postDate3 = document.getElementById("postDate3").innerHTML = "Postado por " + data[2].profileName + " em " + data[2].postDate;
+    const title4 = document.getElementById("card-title4").innerHTML = data[3].title;
+    const postDate4 = document.getElementById("postDate4").innerHTML = "Postado por " + data[3].profileName + " em " + data[3].postDate;
+    const title5 = document.getElementById("card-title5").innerHTML = data[4].title;
+    const postDate5 = document.getElementById("postDate5").innerHTML = "Postado por " + data[4].profileName + " em " + data[4].postDate;
+    let img5 = `https://api-rest-post-diegocandido.herokuapp.com${data[4].thumbImage}`;
+    const imagem5 = document.getElementById("card-img-top5").src = img5;
+    const title6 = document.getElementById("card-title6").innerHTML = data[5].title;
+    const postDate6 = document.getElementById("postDate6").innerHTML = "Postado por " + data[5].profileName + " em " + data[5].postDate;
 }
 
-async function fetchAndRender2Data() {
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/1";
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        //const thumbImage = data.thumbImage;
-        //document.getElementById("card-img-top2").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title2");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text2");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate2");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
-}
-
-async function fetchAndRender3Data() {
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/2";
-    try{
-        const response = await fetch(url);
-        const data = await response.json();
-        //const thumbImage = data.thumbImage;
-        //document.getElementById("card-img-top3").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title3");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text3");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate3");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch(error){
-        console.error("Error fetching data:", error);
-    }
-}
-
-async function fetchAndRender4Data() {
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/3";
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        //const thumbImage = data.thumbImage;
-        //document.getElementById("card-img-top4").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title4");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text4");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate4");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
-}
-
-async function fetchAndRender5Data() {
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/4";
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        const thumbImage = data.thumbImage;
-        document.getElementById("card-img-top5").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title5");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text5");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate5");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-    }
-}
-
-async function fetchAndRender6Data(){
-    const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/5";
-    try{
-        const response = await fetch(url);
-        const data = await response.json();
-        //const thumbImage = data.thumbImage;
-        //document.getElementById("card-img-top6").src = "https://api-rest-post-diegocandido.herokuapp.com"+thumbImage;
-        const title = document.getElementById("card-title6");
-        title.textContent = data.title;
-        const description = document.getElementById("card-text6");
-        description.textContent = data.description;
-        const postDate = document.getElementById("postDate6");
-        postDate.textContent = "Postado por " + data.profileName + " em " + data.postDate;
-    } catch(error){
-        console.error("Error fetching data:", error);
-    }
-}
-
+//Postagens Populares
 async function fetchPopu(){
     const url = "https://api-rest-post-diegocandido.herokuapp.com/postagem/0";
     try{
@@ -145,9 +61,4 @@ async function fetchPopu3(){
 fetchPopu3();
 fetchPopu2();
 fetchPopu();
-fetchAndRender6Data();
-fetchAndRender5Data();
-fetchAndRender4Data();
-fetchAndRender3Data();
-fetchAndRender2Data();
-fetchAndRenderData();
+Blog();
